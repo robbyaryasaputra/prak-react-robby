@@ -1,0 +1,82 @@
+/* Menggunakan font Google 'Poppins' agar terlihat lebih modern dan rapi */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Styling untuk keseluruhan halaman */
+body {
+    font-family: 'Poppins', 'Arial', sans-serif;
+    /* Memberikan latar belakang gradient yang cerah dan berwarna */
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #444;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh; /* Memastikan background menutupi seluruh layar */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+/* Container utama */
+.card {
+    width: 100%;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.98); /* Putih bersih dengan sedikit transparansi */
+    padding: 30px;
+    border-radius: 16px; /* Sudut dibuat lebih membulat */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Bayangan lebih lembut dan menyebar */
+    border-top: 5px solid #ff758c; /* Aksen warna manis di bagian atas */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transisi halus untuk hover */
+}
+
+/* Efek saat mouse diarahkan ke card (Hover) */
+.card:hover {
+    transform: translateY(-5px); /* Efek melayang */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Header utama */
+h1 {
+    text-align: center;
+    margin-top: 0;
+    font-weight: 600;
+    /* Mengubah warna teks menjadi gradient */
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 1px;
+}
+
+/* Paragraf */
+p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+    text-align: justify; /* Teks rata kiri-kanan agar rapi */
+}
+
+/* Garis pemisah */
+hr {
+    border: none;
+    height: 3px;
+    /* Garis pemisah dengan warna gradient memudar di ujungnya */
+    background: linear-gradient(to right, transparent, #ff758c, transparent);
+    margin: 25px 0;
+    opacity: 0.6;
+}
+
+/* Greeting */
+small {
+    display: block;
+    font-style: italic;
+    font-weight: 600;
+    text-align: center;
+    color: #764ba2;
+    margin-top: 15px;
+    /* Memberikan gaya seperti 'badge' kecil di bawah */
+    background-color: #f0e6ff;
+    padding: 8px 16px;
+    border-radius: 20px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}

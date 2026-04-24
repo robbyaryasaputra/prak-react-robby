@@ -1,18 +1,37 @@
 import { createRoot } from "react-dom/client";
+import { useState } from "react";
 import "./assets/tailwind.css";
 
 import Sidebar from "./layouts/Sidebar";
 import Header from "./layouts/Header";
 import Dashboard from "./pages/Dashboard";
+import Details from "./pages/Details";
+import Services from "./pages/Services";
 
 export default function App() {
+  const [active, setActive] = useState("Dashboard");
+  const [search, setSearch] = useState("");
+
+  const renderPage = () => {
+    switch (active) {
+      case "Dashboard":
+        return <Dashboard search={search} />;
+      case "Details":
+        return <Details search={search} />;
+      case "Services":
+        return <Services search={search} />;
+      default:
+        return <Dashboard search={search} />;
+    }
+  };
+
   return (
     <div className="flex min-h-screen bg-gray-100">
-      <Sidebar />
+      <Sidebar active={active} setActive={setActive} />
 
       <div className="flex-1 flex flex-col">
-        <Header />
-        <Dashboard />
+        <Header search={search} setSearch={setSearch} />
+        {renderPage()}
       </div>
     </div>
   );

@@ -2,12 +2,12 @@
 
 @font-face {
     font-family: 'playfair';
-    src: url('./fonts/Barlow-Regulas') format('woff2');
+    src: url('/fonts/Barlow-Regulas') format('woff2');
 }
 
 @font-face {
     font-family: 'roboto';
-    src: url('./fonts/Poppins-Regular') format('woff2');
+    src: url('/fonts/Poppins-Regular') format('woff2');
 }
 
 :root {

@@ -1,82 +1,53 @@
-/* Menggunakan font Google 'Poppins' agar terlihat lebih modern dan rapi */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-
-/* Styling untuk keseluruhan halaman */
+/* Styling untuk keseluruhan halaman - Tema Alam/Hewan */
 body {
-    font-family: 'Poppins', 'Arial', sans-serif;
-    /* Memberikan latar belakang gradient yang cerah dan berwarna */
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: #444;
+    font-family: 'Arial', sans-serif;
+    background-color: #eaddcf; /* Warna pasir savana */
+    color: #3e2723; /* Cokelat gelap */
     margin: 0;
     padding: 20px;
-    min-height: 100vh; /* Memastikan background menutupi seluruh layar */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
 }
 
 /* Container utama */
 .card {
-    width: 100%;
     max-width: 600px;
-    background: rgba(255, 255, 255, 0.98); /* Putih bersih dengan sedikit transparansi */
-    padding: 30px;
-    border-radius: 16px; /* Sudut dibuat lebih membulat */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Bayangan lebih lembut dan menyebar */
-    border-top: 5px solid #ff758c; /* Aksen warna manis di bagian atas */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transisi halus untuk hover */
-}
-
-/* Efek saat mouse diarahkan ke card (Hover) */
-.card:hover {
-    transform: translateY(-5px); /* Efek melayang */
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    margin: 20px auto;
+    background: #fffaf0; /* Putih gading */
+    padding: 20px;
+    border-radius: 12px;
+    border: 2px solid #8d6e63; /* Pinggiran cokelat kayu/ranting */
+    box-shadow: 0 6px 12px rgba(93, 64, 55, 0.15); /* Bayangan kecokelatan */
 }
 
 /* Header utama */
 h1 {
+    color: #2e8b57; /* Hijau rimba (Jungle Green) */
     text-align: center;
-    margin-top: 0;
-    font-weight: 600;
-    /* Mengubah warna teks menjadi gradient */
-    background: linear-gradient(to right, #ff758c, #ff7eb3);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
     letter-spacing: 1px;
 }
 
 /* Paragraf */
 p {
     font-size: 16px;
-    line-height: 1.8;
-    color: #555;
-    text-align: justify; /* Teks rata kiri-kanan agar rapi */
+    line-height: 1.6;
+    color: #4e342e; /* Cokelat bulu beruang */
 }
 
 /* Garis pemisah */
 hr {
     border: none;
     height: 3px;
-    /* Garis pemisah dengan warna gradient memudar di ujungnya */
-    background: linear-gradient(to right, transparent, #ff758c, transparent);
-    margin: 25px 0;
-    opacity: 0.6;
+    background: #ff9800; /* Oranye loreng harimau */
+    margin: 15px 0;
+    border-radius: 2px;
 }
 
 /* Greeting */
 small {
     display: block;
     font-style: italic;
-    font-weight: 600;
     text-align: center;
-    color: #764ba2;
-    margin-top: 15px;
-    /* Memberikan gaya seperti 'badge' kecil di bawah */
-    background-color: #f0e6ff;
-    padding: 8px 16px;
-    border-radius: 20px;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
+    color: #795548; /* Cokelat tanah */
+    margin-top: 5px;
+    font-weight: bold;
 }

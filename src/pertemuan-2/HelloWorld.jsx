@@ -1,5 +1,5 @@
 export default function HelloWorld(){
-    const propsUserCard = {
+     const propsUserCard = {
         nama: "Goku",
         nim: "999999",
         tanggal: "2025-01-01"
@@ -10,25 +10,25 @@ export default function HelloWorld(){
             <p>Selamat Belajar ReactJs</p>
             <GreetingBinjai/>
             <QuoteText/>
-             <UserCard 
+               <UserCard 
+	            nama="Clea" 
+	            nim="2457301029"
+	            tanggal={new Date().toLocaleDateString()}
+	          />
+                <UserCard 
 	            nama="Fikri" 
 	            nim="169412"
 	            tanggal={new Date().toLocaleDateString()}
 	          />
-               <UserCard 
-	            nama="Robby" 
-	            nim="2357301119"
-	            tanggal={new Date().toLocaleDateString()}
-	          />
-              <UserCard {...propsUserCard}/>
-              <img src="img/1.jpg" alt="gambar" />
+               <UserCard {...propsUserCard}/>
+               <img src="img/images.webp" alt="logo" width={200}/>
         </div>
     )
 }
 
 function GreetingBinjai(){
     return (
-      <small>Salam dari binjai</small>
+        <small>Salam dari Binjai</small>
     )
 }
 

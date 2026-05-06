@@ -6,7 +6,7 @@ import Sidebar from "./layouts/Sidebar";
 import Header from "./layouts/Header";
 import Dashboard from "./pages/Dashboard";
 import Details from "./pages/Details";
-import Services from "./pages/Services";
+import Service from "./pages/Service";
 
 export default function App() {
   const [active, setActive] = useState("Dashboard");
@@ -19,7 +19,7 @@ export default function App() {
       case "Details":
         return <Details search={search} />;
       case "Services":
-        return <Services search={search} />;
+        return <Service search={search} />;
       default:
         return <Dashboard search={search} />;
     }

@@ -1,16 +1,13 @@
-export default function ResponsiveText(){
+export default function ResponsiveText() {
     return (
-        <div>
-            <p className="text-sm md:text-red-500 lg:text-xl xl:text-2xl mb-4">
+        <>
+        <p className="text-sm md:text-lg lg:text-xl xl:text-2xl mb-4">
             Coba lakukan zoom in atau zoom out. Perhatikan bahwa ukuran teks akan menyesuaikan dengan ukuran layar.<br/>
             Coba hapus class yang menggunakan prefix breakpoint (md:xxx, lg:xxx, xl:xxx) dan lihat perbedaannya!
         </p>
-        <ResponsiveWidth/>
-        <ResponsiveLayout/>
-        </div>
-        
-       
-        
+            <ResponsiveWidth/>
+            <ResponsiveLayout/>
+        </>
     )
 }
 
